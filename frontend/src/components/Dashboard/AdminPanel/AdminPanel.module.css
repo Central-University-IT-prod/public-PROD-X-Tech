@@ -1,0 +1,179 @@
+.page-title {
+    font-size: 64px;
+    font-family: "Stinger";
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+}
+
+.actions-container {
+    position: relative;
+    border-radius: 24px;
+    background-color: var(--violet);
+    border: 2px solid var(--light);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 98vh;
+    padding: 16px;
+    margin-right: 16px;
+    max-width: 300px;
+}
+
+.actions-button {
+    margin: 0;
+    width: 100%;
+    min-height: 60px;
+}
+
+.filelUpoad-form {
+    padding: 0px 16px;
+}
+
+.filelUpoad-form input {
+    background-color: var(--green);
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 12px;
+    height: 60px;
+    border: none;
+}
+
+.filelUpoad-form button {
+    background-color: var(--green);
+    margin-top: 12px;
+    width: 100%;
+}
+
+.filelUpoad-form button:hover {
+    background-color: #03957b;
+}
+
+.filelUpoad-form button:active {
+    background-color: var(--dark-green);
+}
+
+.filelUpoad-form input::-webkit-file-upload-button {
+    background-color: #03957b;
+    color: white;
+    font-family: "Stolzl";
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.graphs-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.graph-image{
+    pointer-events: none;
+}
+
+.username-title{
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#logout-btn{
+    background-color: var(--magenta);
+}
+
+@media screen and (max-width: 1000px) {
+    .graph-image{
+        max-width: 400px;
+    }
+
+    .page-title{
+        font-size: 52px;
+    }
+
+    .actions-container button{
+        max-width: 180px;
+        font-size: 14px;
+        max-height: 40px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .graph-image{
+        margin: 8px 8px;
+    }
+
+    .actions-container{
+        margin: 0;
+        max-width: none;
+        width: 100%;
+        height: 380px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .actions-container button{
+        max-height: none;
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .main-section{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section button{
+        /* width: 100%; */
+        max-width: none;
+    }
+
+    .username-container{
+        width: 100%;
+    }
+
+    .graphs-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .actions-container{
+        height: 400px;
+    }
+
+    .filelUpoad-form input{
+        height: 40px;
+        padding-top: 4px;
+    }
+
+    .filelUpoad-form button{
+        margin: 6px 2px;
+    }
+}

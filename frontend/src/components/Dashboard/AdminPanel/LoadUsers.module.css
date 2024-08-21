@@ -1,0 +1,61 @@
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px;
+    border: 2px solid var(--light);
+    margin-bottom: 8px;
+    border-radius: 24px;
+}
+
+.user-container button {
+    max-width: 140px;
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.username {
+    font-size: 20px;
+}
+
+.team-container li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border: 2px solid var(--light);
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.team-container .team-input{
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.teams-title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.team-submit{
+    cursor: pointer;
+}
+
+.team-submit:hover{
+    border: 2px solid var(--accent);
+}
+
+@media screen and (max-width: 440px) {
+    .username{
+        font-size: 14px;
+    }
+
+    .user-container button{
+        font-size: 12px;
+    }
+}

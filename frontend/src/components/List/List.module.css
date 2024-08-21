@@ -1,0 +1,84 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+.dropdown {
+    color: white;
+    width: 400px;
+    height: 48px;
+    background-color: var(--violet);
+    border: 2px solid var(--light);
+    font-family: "Stolzl";
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    transition: 300ms;
+    outline: none;
+}
+
+.dropdown:active {
+    border: 2px solid var(--accent);
+}
+
+.dropdown:hover {
+    border: 2px solid var(--accent);
+}
+
+.dropdown:focus-visible {
+    border: 2px solid var(--accent);
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-container option {
+    color: var(--color);
+}
+
+.err-mess {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title {
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.filter-input {
+    margin: 0px 16px;
+    width: calc(100% - 32px);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .dropdown{
+        width: calc(90% - 32px);
+    }
+}

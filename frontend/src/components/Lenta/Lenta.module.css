@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 150px);
+}
+
+.error-text {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--magenta);
+    padding: 0px 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .error-text {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .error-text {
+        font-size: 18px;
+    }
+}

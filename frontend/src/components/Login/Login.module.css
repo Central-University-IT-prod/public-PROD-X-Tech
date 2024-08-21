@@ -1,0 +1,74 @@
+.title {
+    font-family: "Stinger";
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.text {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.container {
+    background-color: var(--light);
+    padding: 24px;
+    border-radius: 32px;
+    margin: 16px;
+}
+
+.link {
+    color: lightskyblue;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: rgb(194, 232, 255);
+}
+
+.reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-auto {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .form-control {
+        font-size: 12px;
+        padding: 8px;
+        height: 42px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+        content: "";
+    }
+
+    .btn {
+        height: 42px;
+        font-size: 14px;
+    }
+}

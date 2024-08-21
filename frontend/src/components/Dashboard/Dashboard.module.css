@@ -1,0 +1,244 @@
+.dashboard-container {
+    padding: 16px;
+    color: white;
+}
+
+.input-label {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input-action-label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-container {
+    margin-bottom: 16px;
+}
+
+.page-title {
+    font-size: 64px;
+    font-family: "Stinger";
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.specialization-btns-container button {
+    min-width: 140px;
+}
+
+.specialization-btns-container {
+    display: flex;
+    gap: 16px;
+}
+
+.specialization-title {
+    font-size: 26px;
+}
+
+.actions-btn-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.actions-btn-container button {
+    margin: 0;
+}
+
+.telegram-container {
+    margin-top: 8px;
+}
+
+.actions-btn {
+    background-color: var(--green);
+}
+
+.info-text {
+    background-color: var(--dark-blue);
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 3px 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: fit-content;
+}
+
+@media (max-width: 800px) {
+    .info-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-text {
+        font-size: 14px;
+    }
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.achieve-btn {
+    width: 32px;
+    height: 32px;
+    margin: 8px 0px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--accent);
+    transition: 0.3s ease;
+}
+
+.action-input {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.specialization-btns-container button {
+    background-color: var(--dark-blue);
+}
+
+.notification-button {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+}
+
+.notification-image {
+    width: 50px;
+}
+
+.notification-container {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    padding: 16px;
+    min-height: 200px;
+    background-color: var(--violet);
+    border: 2px solid var(--light);
+    border-radius: 16px;
+}
+
+.notification-container button {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.notification-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.notification-message button {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.notification-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 2px solid var(--light);
+}
+
+@media screen and (max-width: 768px) {
+    .actions-btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actions-btn-container button {
+        max-width: none;
+    }
+
+    .page-title {
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    .specialization-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .specialization-btns-container button {
+        min-width: 100px;
+        font-size: 16px;
+        margin: 4px 0px;
+    }
+
+    .specialization-btns-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .input-container {
+        margin-bottom: 4px;
+    }
+
+    .input-label {
+        margin-bottom: 10px;
+    }
+
+    .notification-button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .notification-image {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .actions-btn-container {
+        grid-template-columns: 1fr;
+    }
+
+    .specialization-btns-container button {
+        width: 100px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .action-input {
+        max-width: none;
+        width: 100%;
+    }
+
+    .page-title {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .notification-container {
+        font-size: 14px;
+        max-width: 300px;
+    }
+}
+
+#notificationButton{
+    background-color: var(--accent);
+}
